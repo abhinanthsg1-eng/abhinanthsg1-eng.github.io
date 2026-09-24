@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Space Science & Physics — exploring black holes, cosmology, singularities and a speculative black-hole universe hypothesis.">
+<title>Space Science & Physics | The End Is the Beginning</title>
+<style>
+:root{
+  --bg:#05060b;
+  --panel:#0c1020;
+  --panel2:#11172a;
+  --text:#f4f7ff;
+  --muted:#aeb8d0;
+  --accent:#7aa7ff;
+  --accent2:#b58cff;
+  --line:rgba(255,255,255,.11);
+  --max:1100px;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;background:
+  radial-gradient(circle at 75% 10%,rgba(100,80,255,.18),transparent 28%),
+  radial-gradient(circle at 20% 25%,rgba(30,110,255,.12),transparent 25%),
+  var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.7;
+}
+a{color:inherit}
+nav{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(16px);
+  background:rgba(5,6,11,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--max);margin:auto;padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:15px;
+}
+.logo{font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:white}
+.hero{
+  min-height:88vh;display:flex;align-items:center;
+  max-width:var(--max);margin:auto;padding:80px 20px;
+}
+.hero-box{max-width:850px}
+.kicker{
+  color:var(--accent);font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;font-size:13px;
+}
+h1{
+  font-size:clamp(42px,8vw,88px);line-height:1.02;
+  margin:18px 0 22px;letter-spacing:-3px;
+}
+.hero h1 span{
+  background:linear-gradient(90deg,#fff,#9bbcff,#caa9ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.subtitle{font-size:clamp(18px,3vw,25px);color:var(--muted);max-width:750px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;padding:12px 18px;border-radius:999px;
+  text-decoration:none;font-weight:700;border:1px solid var(--line);
+}
+.btn.primary{background:white;color:#080912}
+.btn.secondary{background:rgba(255,255,255,.05);color:white}
+section{max-width:var(--max);margin:auto;padding:85px 20px}
+.section-title{font-size:clamp(30px,5vw,50px);margin:0 0 15px}
+.lead{color:var(--muted);max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+.card{
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+  border:1px solid var(--line);border-radius:22px;padding:25px;
+}
+.card h3{margin-top:0;font-size:22px}
+.card p{color:var(--muted)}
+.tag{
+  display:inline-block;font-size:12px;padding:5px 9px;border-radius:999px;
+  background:rgba(122,167,255,.12);color:#bcd0ff;margin-bottom:12px;
+}
+.warning{
+  border-left:4px solid var(--accent2);
+  background:rgba(181,140,255,.08);padding:22px;border-radius:0 16px 16px 0;
+}
+.quote{
+  font-size:clamp(22px,4vw,34px);font-weight:700;
+  line-height:1.35;padding:30px 0;
+}
+ul{padding-left:22px}
+li{margin:9px 0;color:var(--muted)}
+strong{color:white}
+.video{
+  aspect-ratio:16/9;border-radius:18px;overflow:hidden;
+  background:#000;border:1px solid var(--line);display:flex;
+  align-items:center;justify-content:center;color:var(--muted);
+  margin-top:25px;
+}
+.video iframe{width:100%;height:100%;border:0}
+.sources a{color:#bcd0ff}
+footer{
+  border-top:1px solid var(--line);padding:35px 20px;
+  text-align:center;color:var(--muted);
+}
+@media(max-width:700px){
+  .nav-inner{align-items:flex-start;flex-direction:column}
+  .nav-links{gap:10px}
+  .hero{min-height:auto;padding-top:65px}
+  .grid{grid-template-columns:1fr}
+  section{padding:65px 18px}
+  h1{letter-spacing:-2px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">SPACE <span>SCIENCE</span> & PHYSICS</div>
+    <div class="nav-links">
+      <a href="#hypothesis">Hypothesis</a>
+      <a href="#physics">Physics</a>
+      <a href="#wrong">Test It</a>
+      <a href="#videos">Videos</a>
+      <a href="#sources">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-box">
+    <div class="kicker">A speculative cosmology hypothesis</div>
+    <h1><span>THE END IS THE BEGINNING.</span><br>THE BEGINNING IS THE END.</h1>
+    <p class="subtitle">
+      Could our universe be connected to the interior of a black hole?
+      Explore the idea — and the physics that could prove it wrong.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#hypothesis">Explore the Hypothesis</a>
+      <a class="btn secondary" href="#wrong">What Could Prove It Wrong?</a>
+    </div>
+  </div>
+</header>
+
+<section id="hypothesis">
+  <div class="kicker">01 · My Hypothesis</div>
+  <h2 class="section-title">The End Is The Beginning</h2>
+  <p class="lead">
+    This is a speculative idea connecting black holes, singularities, the Big Bang
+    and the expansion of the universe. It is not an established scientific theory.
+  </p>
+
+  <div class="card">
+    <p>
+      We don't know what a black hole is ultimately made of. If a body falls inside
+      a black hole, its matter and energy continue into a region where classical
+      general relativity predicts extreme spacetime curvature.
+    </p>
+    <p>
+      In the classical picture, matter falling into an idealized black hole can
+      reach a singularity. A singularity, however, should not simply be imagined
+      as an ordinary physical point made of infinitely compressed particles.
+      It signals that our classical theory has reached a limit.
+    </p>
+    <p>
+      My hypothesis asks whether the extreme interior of a black hole could somehow
+      be connected to the beginning of an expanding universe. In this picture,
+      what appears to us as the end of matter inside a black hole could represent
+      a transition into a new cosmic phase.
+    </p>
+    <p>
+      I also explore whether the physics behind cosmic expansion could be connected
+      to this transition. This is an open question: current cosmology does not
+      establish that dark energy is dark matter's energy, nor that dark matter
+      surrounds a black-hole singularity in the way proposed here.
+    </p>
+  </div>
+
+  <div class="quote">
+    “What if the end of a black hole could somehow become the beginning of a universe?”
+  </div>
+</section>
+
+<section id="physics">
+  <div class="kicker">02 · Established Physics</div>
+  <h2 class="section-title">What We Know</h2>
+  <p class="lead">
+    The hypothesis starts from real physics, but the connection between these
+    facts is speculative.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <div class="tag">BLACK HOLES</div>
+      <h3>Extreme Gravity</h3>
+      <p>
+        A black hole is a region of spacetime from which, once inside the event
+        horizon, signals cannot escape to the outside universe through ordinary
+        future-directed paths.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">GENERAL RELATIVITY</div>
+      <h3>Singularities</h3>
+      <p>
+        Classical general relativity predicts singular behavior in idealized
+        black-hole solutions. This is one reason physicists expect a deeper theory
+        that combines gravity with quantum physics.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">COSMOLOGY</div>
+      <h3>The Expanding Universe</h3>
+      <p>
+        Observations show that the universe is expanding. The standard cosmological
+        model describes this history using an early hot, dense state and includes
+        dark matter and dark energy as distinct components.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="tag">HAWKING RADIATION</div>
+      <h3>Black-Hole Evaporation</h3>
+      <p>
+        Quantum-field calculations in curved spacetime predict that black holes
+        can emit Hawking radiation and lose mass over extremely long timescales.
+        The exact endpoint requires physics we do not yet have experimentally confirmed.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="wrong">
+  <div class="kicker">03 · Falsifiability</div>
+  <h2 class="section-title">What Could Prove It Wrong?</h2>
+
+  <div class="warning">
+    <strong>Scientific principle:</strong> A hypothesis must be open to evidence
+    against it. The goal is not to prove this idea right, but to find out whether
+    nature agrees with it.
+  </div>
+
+  <div class="card" style="margin-top:25px">
+    <h3>1. A complete theory of quantum gravity could rule out the transition</h3>
+    <p>
+      If a successful theory of quantum gravity showed that black-hole interiors
+      cannot transition into an expanding spacetime, this hypothesis would be
+      strongly challenged.
+    </p>
+
+    <h3>2. Observations could be incompatible with a black-hole origin</h3>
+    <p>
+      Future measurements of the cosmic microwave background, large-scale
+      structure, gravitational waves, or the geometry of the universe could reveal
+      features inconsistent with a black-hole origin.
+    </p>
+
+    <h3>3. Black-hole evaporation could end without a new universe</h3>
+    <p>
+      If the final theory of black-hole evaporation showed that evaporation simply
+      removes the black hole without any transition to a new expanding spacetime,
+      the proposed connection would fail.
+    </p>
+
+    <h3>4. Dark matter and dark energy may have no connection to the proposed mechanism</h3>
+    <p>
+      Current cosmology treats dark matter and dark energy as different phenomena.
+      If future experiments establish their properties in a way that provides no
+      physical connection to the proposed transition, this part of the hypothesis
+      would need to be abandoned or changed.
+    </p>
+
+    <h3>5. The hypothesis needs a unique, testable prediction</h3>
+    <p>
+      The most important challenge is to identify an observable effect predicted
+      by this hypothesis that standard cosmology does not predict. Scientists could
+      then search for that effect. If it were not observed, the hypothesis could
+      be falsified or would require major modification.
+    </p>
+
+    <p><strong>The key question:</strong> What observable feature should exist if
+      our universe was born inside a black hole, but should not exist if the
+      standard cosmological model is correct?</p>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="kicker">04 · Videos</div>
+  <h2 class="section-title">Space Science & Physics</h2>
+  <p class="lead">
+    Watch the videos exploring black holes, cosmology and this hypothesis.
+  </p>
+
+  <div class="card">
+    <h3>Featured Video</h3>
+    <p>
+      Watch my latest video exploring the connection between black holes,
+      singularities and the origin of the universe.
+    </p>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/kqx2C3Hj_mE?rel=0"
+        title="THE END IS THE BEGINNING. THE BEGINNING IS THE END."
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="margin-top:16px">
+      <a class="btn secondary" href="https://youtu.be/kqx2C3Hj_mE" target="_blank" rel="noopener">
+        Watch on YouTube ↗
+      </a>
+    </p>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="kicker">05 · Sources & Further Reading</div>
+  <h2 class="section-title">Science Behind the Ideas</h2>
+  <p class="lead">
+    This section should contain the papers, books, observatory pages and educational
+    resources you use to distinguish established physics from speculation.
+  </p>
+
+  <div class="card sources">
+    <h3>Recommended starting points</h3>
+    <ul>
+      <li>NASA — Black holes and cosmology</li>
+      <li>ESA — Space science and cosmology</li>
+      <li>Event Horizon Telescope — Black-hole observations</li>
+      <li>Peer-reviewed research on general relativity and quantum gravity</li>
+    </ul>
+    <p>
+      <strong>Important:</strong> When adding sources, link directly to the original
+      scientific or institutional source whenever possible.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>SPACE SCIENCE & PHYSICS</strong></p>
+  <p>Exploring the universe. Questioning the unknown.</p>
+  <p>© <span id="year"></span> Space Science & Physics</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
